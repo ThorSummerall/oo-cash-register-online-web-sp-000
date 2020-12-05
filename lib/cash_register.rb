@@ -35,6 +35,6 @@ class CashRegister
   end
 
   def items
-    @items
+    @transaction_list
   end
 end
