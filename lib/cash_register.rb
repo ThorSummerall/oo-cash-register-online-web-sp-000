@@ -35,6 +35,10 @@ class CashRegister
   end
 
   def items
-    @transaction_list
+    array_of_items = []
+    @transaction_list.each do |x|
+      array_of_items.push(x[:item])
+    end
+    array_of_items 
   end
 end
