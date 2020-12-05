@@ -41,4 +41,11 @@ class CashRegister
     end
     array_of_items
   end
+
+  def void_last_transaction
+    if(transaction_list.length > 0)
+      @total -= @transaction_list.last[:price]*@transaction_list.last[:quantity]
+      @transaction_list.pop
+    end
+  end
 end
