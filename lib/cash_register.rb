@@ -30,7 +30,7 @@ class CashRegister
       puts "There is no discount."
     else
       @total *= ((100.0-@discount)/100)
-      return "After the discount, the total comes to $#{@total}."
+      return "After the discount, the total comes to $#{@total.round}."
     end
   end
 end
