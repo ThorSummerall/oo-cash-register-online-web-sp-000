@@ -26,6 +26,11 @@ class CashRegister
   end
 
   def apply_discount
-    @total *= ((100.0-@discount)/100)
+    if @discount == 0
+      puts "There is no discount."
+    else 
+      @total *= ((100.0-@discount)/100)
+      puts "Here is the discounted price. #{@total}"
+    end
   end
 end
