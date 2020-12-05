@@ -39,6 +39,6 @@ class CashRegister
     @transaction_list.each do |x|
       array_of_items.push(x[:item])
     end
-    array_of_items 
+    array_of_items
   end
 end
