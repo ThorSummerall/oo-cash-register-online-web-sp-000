@@ -1,10 +1,10 @@
-class CashRegister 
+class CashRegister
 
   def initialize
     @total = 0
-  end 
+  end
 
-  def total 
+  def total
     @total
   end
 end
