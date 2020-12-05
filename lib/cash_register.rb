@@ -17,8 +17,8 @@ class CashRegister
       @total += price
       @transaction_list.push (
         {
-          :item => item
-          :price => price
+          :item => item,
+          :price => price,
           :quantity => quantity
         }
       )
