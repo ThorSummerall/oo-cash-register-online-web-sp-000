@@ -22,5 +22,6 @@ class CashRegister
           :quantity =>
         }
       )
+    end
   end
 end
