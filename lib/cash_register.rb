@@ -30,7 +30,7 @@ class CashRegister
       puts "There is no discount."
     else
       @total *= ((100.0-@discount)/100)
-      puts "After the discount, the total comes to $#{@total}"
+      puts "After the discount, the total comes to $#{@total}."
     end
   end
 end
