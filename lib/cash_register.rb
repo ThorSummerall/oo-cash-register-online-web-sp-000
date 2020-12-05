@@ -27,7 +27,7 @@ class CashRegister
 
   def apply_discount
     if @discount == 0
-      puts "There is no discount to apply."
+      return "There is no discount to apply."
     else
       @total *= ((100.0-@discount)/100)
       return "After the discount, the total comes to $#{@total.round}."
